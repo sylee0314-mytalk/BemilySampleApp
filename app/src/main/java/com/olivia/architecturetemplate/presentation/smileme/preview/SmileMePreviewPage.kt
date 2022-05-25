@@ -64,7 +64,6 @@ fun SmileMePreviewPage(
     LaunchedEffect(state.saveState) {
         when (state.saveState) {
             SmileMeSaveState.SMILE_ME_SAVING -> {
-                /* TODO : Loading */
             }
             SmileMeSaveState.SMILE_ME_SAVED -> {
                 Toast.makeText(context, smileMeSave, Toast.LENGTH_SHORT).show()
@@ -204,7 +203,6 @@ private fun SmileMePreviewViewSection(
     modifier: Modifier = Modifier,
     animationDrawable: AnimationDrawable? = null
 ) {
-// TODO : 임시로 Box 설정. Smile me 보여지도록 설정 필요
     Box(
         modifier = modifier
             .background(color = Color.Gray)

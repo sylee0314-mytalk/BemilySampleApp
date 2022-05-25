@@ -46,6 +46,7 @@ class SmileMeEmoticonSaveUseCase @Inject constructor(
     private fun addSmileMeEmoticon(emoticonParam: SmileMeEmoticonSaveParams): Flow<Result<Long>> = flow {
         val image = emoticonParam.emoticonImage ?: throw NullPointerException("Image is empty")
         val imageThumb = emoticonParam.emoticonImageThumb ?: throw NullPointerException("Image thumbnail is empty")
+        //TODO 스마일미 등록 요청 API 적용
 //        repository.addSmileMeEmoticon(image, imageThumb).map { Result.Success(it) }
 
         emit(Result.Success(0L))

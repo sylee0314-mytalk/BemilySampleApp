@@ -18,12 +18,10 @@ class SmileMeEmoticonRepositoryImpl @Inject constructor(
 ) : SmileMeEmoticonRepository {
 
     override fun addSmileMeEmoticon(image: String, imageThumb: String): Flow<Long> = flow {
-        // TODO 스카일미 이모티콘 등록
         emit(0L)
     }
 
     override fun deleteSmileMeEmoticon(emoticonId: String) = flow {
-        // TODO 스마일미 이모티콘 삭제
         emit(Unit)
     }
 
@@ -32,7 +30,6 @@ class SmileMeEmoticonRepositoryImpl @Inject constructor(
     }
 
     override fun getSmileMeEmoticonCount(): Int {
-        // TODO 스마일미 이모티콘 개수
         return 0
     }
 
